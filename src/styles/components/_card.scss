@@ -1,0 +1,52 @@
+.card{
+    background-color: pink;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-right: 12px solid #fff;
+        position: absolute;
+        top: 16px;
+        left: -12px;
+    }
+padding: 16px;
+    background-color: $white;
+    &__page-number{
+        font-size: 12px;
+        color: grey;
+    }
+
+    &__page-title{
+        font-size: 20px;
+        color: grey;
+        font-weight: 600;
+    }
+
+    &__comment{
+        &__add-comment{
+            color: #2CE6CE;
+            text-align: center;
+            font-size: 16px;
+
+        }
+
+        &__text-field{
+            height: 110px;
+            width: 100%;
+            border: 1px solid grey;
+        }
+    }
+
+    &__level{
+        font-size: 12px;
+        color: grey;
+    }
+    @media screen and (min-width: 768px){
+        width: 60%;
+    }
+  
+}
